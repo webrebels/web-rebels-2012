@@ -38,5 +38,10 @@ app.get("/", function(req, res) {
     });
 });
 
+app.get("/sponsors", function(req, res) {
+    res.render("sponsors", {
+        layout: false
+    });
+});
 app.listen(parseInt(process.env.PORT, 10) || 1337);
 console.log("Listening on port " + app.address().port + " in " + app.settings.env + " mode.");
