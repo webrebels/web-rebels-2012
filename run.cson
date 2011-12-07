@@ -1,0 +1,2 @@
+name: "webrebels.org"
+spawn_command: "coffee server.coffee"
