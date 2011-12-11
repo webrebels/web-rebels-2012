@@ -1,6 +1,7 @@
 fs = require "fs"
 path = require "path"
 connect = require "connect"
+gzip = require "connect-gzip"
 jade = require "jade"
 stylus = require "stylus"
 nib = require "nib"
@@ -11,7 +12,7 @@ pageTemplate = jade.compile fs.readFileSync (path.join __dirname, "views", "layo
 environment = process.env.NODE_ENV or "development"
 
 app = connect()
-app.use connect.static "#{__dirname}/public"
+app.use gzip.staticGzip "#{__dirname}/public"
 app.use connect.bodyParser()
 app.use connect.cookieParser()
 app.use connect.errorHandler()
