@@ -57,4 +57,10 @@ You can use the Heroku Toolbelt to monitor the app:
     $ heroku logs --remote staging
     $ heroku logs --remote production
 
+To simplify development, you can have your local server restart
+automatically whenever you change something by launching it through
+Runlol:
+
+    $ npm install -g runlol
+    $ runlol
 
