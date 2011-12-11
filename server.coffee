@@ -12,7 +12,6 @@ pageTemplate = jade.compile fs.readFileSync (path.join __dirname, "views", "layo
 environment = process.env.NODE_ENV or "development"
 
 app = connect()
-app.use gzip.staticGzip "#{__dirname}/public"
 app.use connect.bodyParser()
 app.use connect.cookieParser()
 app.use connect.errorHandler()
@@ -21,6 +20,7 @@ app.use stylus.middleware
     src: "#{__dirname}/public"
     compile: (str, path) ->
       stylus(str).set("filename", path).set("compress", true).use nib()
+app.use gzip.staticGzip "#{__dirname}/public"
 app.use connect.router (app) ->
     fs.readdir articlePath, (err, files) ->
       (_(files).chain().filter (file) -> file.match /\.jade$/).each (file) ->
