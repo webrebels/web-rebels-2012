@@ -8,7 +8,9 @@ nib = require "nib"
 _ = require "underscore"
 
 articlePath = path.join __dirname, "articles"
-pageTemplate = jade.compile fs.readFileSync (path.join __dirname, "views", "layout.jade"), "utf-8"
+layoutPath = path.join __dirname, "views", "layout.jade"
+pageTemplate = jade.compile (fs.readFileSync layoutPath, "utf-8"),
+  filename: layoutPath
 environment = process.env.NODE_ENV or "development"
 
 app = connect()
@@ -24,9 +26,11 @@ app.use gzip.staticGzip "#{__dirname}/public"
 app.use connect.router (app) ->
     fs.readdir articlePath, (err, files) ->
       (_(files).chain().filter (file) -> file.match /\.jade$/).each (file) ->
-        fs.readFile (path.join articlePath, file), "utf-8", (err, data) ->
-          page = pageTemplate { body: (jade.compile data)() }
+        filename = (path.join articlePath, file)
+        fs.readFile filename, "utf-8", (err, data) ->
+          page = (jade.compile data, { filename: filename })()
           url = path.basename file, '.jade'
+          page = pageTemplate { body: page } if url isnt "index"
           app.get "/#{if url is 'index' then '' else url}", (req, res) ->
             res.setHeader "Content-Type", "text/html"
             res.end page

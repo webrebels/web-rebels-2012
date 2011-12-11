@@ -1,7 +1,17 @@
-div#about.wrapper
-  div.left
-    h1 Web Rebels
-    p It is going to pwn
-  div.right
-    p This is the front page.
-  div(style="width: 970px; clear: both")
+!!! 5
+html(lang="en")
+  include ../views/head
+  body
+    div#pagewrapper
+      div#frontpage
+        include ../views/menu
+        h1
+          img(src="/images/big-logo.png", alt="Web Rebels")
+        p 24th&ndash;25th May 2012
+      div#about.wrapper
+        div.left
+          h1.end All web, all the time
+        div.right
+          p Blurb goes here.
+        div(style="width: 970px; clear: both")
+
