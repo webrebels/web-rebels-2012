@@ -7,10 +7,6 @@ stylus = require "stylus"
 nib = require "nib"
 _ = require "underscore"
 
-articlePath = path.join __dirname, "articles"
-layoutPath = path.join __dirname, "views", "layout.jade"
-pageTemplate = jade.compile (fs.readFileSync layoutPath, "utf-8"),
-  filename: layoutPath
 environment = process.env.NODE_ENV or "development"
 
 app = connect()
@@ -24,16 +20,10 @@ app.use stylus.middleware
       stylus(str).set("filename", path).set("compress", true).use nib()
 app.use gzip.staticGzip "#{__dirname}/public"
 app.use connect.router (app) ->
-    fs.readdir articlePath, (err, files) ->
-      (_(files).chain().filter (file) -> file.match /\.jade$/).each (file) ->
-        filename = (path.join articlePath, file)
-        fs.readFile filename, "utf-8", (err, data) ->
-          page = (jade.compile data, { filename: filename })()
-          url = path.basename file, '.jade'
-          page = pageTemplate { body: page } if url isnt "index"
-          app.get "/#{if url is 'index' then '' else url}", (req, res) ->
-            res.setHeader "Content-Type", "text/html"
-            res.end page
+  index = fs.readFileSync (path.join __dirname, "views", "index.html"), "utf-8"
+  app.get "/", (req, res) ->
+    res.setHeader "Content-Type", "text/html"
+    res.end index
 
 if environment is "production"
   app.use connect.errorHandler()
