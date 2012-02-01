@@ -1,13 +1,4 @@
 {
     "name": "webrebels.org",
-    "version": "0.0.1",
-    "dependencies": {
-        "coffee-script": "1.1.3",
-        "connect": "1.8.2",
-        "connect-gzip": "0.1.5",
-        "stylus": "0.19.0",
-        "jade": "0.16.4",
-        "nib": "0.2.0",
-        "underscore": "1.2.3"
-    }
+    "version": "0.0.1"
 }

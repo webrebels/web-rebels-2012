@@ -1,0 +1,27 @@
+/* Michal Budzynski */
+.mb .img { background-image: url('../gfx/speaker_michal_budzynski_small_bw.png') }
+.mb:hover .img { background-image: url('../gfx/speaker_michal_budzynski_small_color.png') }
+
+/* Erlend Oftedal */
+.eo .img { background-image: url('../gfx/speaker_erlend_oftedal_small_bw.png') }
+.eo:hover .img { background-image: url('../gfx/speaker_erlend_oftedal_small_color.png') }
+
+/* Andy Osmani */
+.ao .img { background-image: url('../gfx/speaker_andy_osmani_bw.png') }
+.ao:hover .img { background-image: url('../gfx/speaker_andy_osmani_color.png') }
+
+/* Christian Johansen */
+.cj .img { background-image: url('../gfx/speaker_christian_johansen_bw.png') }
+.cj:hover .img { background-image: url('../gfx/speaker_christian_johansen_color.png') }
+
+/* Felix Geisendörfer */
+.fg .img { background-image: url('../gfx/speaker_felix_geisendorfer_bw.png') }
+.fg:hover .img { background-image: url('../gfx/speaker_felix_geisendorfer_color.png') }
+
+/* Jari Bakken */
+.jb .img { background-image: url('../gfx/speaker_jari_bakken_bw.png') }
+.jb:hover .img { background-image: url('../gfx/speaker_jari_bakken_color.png') }
+
+/* Zed A.Shaw */
+.zas .img { background-image: url('../gfx/speaker_zed_a_shaw_bw.png') }
+.zas:hover .img { background-image: url('../gfx/speaker_zed_a_shaw_color.png') }
