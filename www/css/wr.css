@@ -334,7 +334,8 @@ body > div:nth-child( 2 ) {
 	background-repeat:      no-repeat;
 }
 .sponsor:nth-child( 1 ),
-.sponsor:nth-child( 5 ) {
+.sponsor:nth-child( 5 ),
+.sponsor:nth-child( 9 ) {
     margin-left:            0;
 }
 
