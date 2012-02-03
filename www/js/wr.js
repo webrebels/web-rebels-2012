@@ -67,4 +67,4 @@
         map.setCenter( map.getCenter() );
     });
 
-})()
+})();
