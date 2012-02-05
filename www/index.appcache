@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2012-02-04:v0
+# 2012-02-05:v0
 
 CACHE:
 index.html
@@ -38,5 +38,5 @@ gfx/webrebels.svg
 js/wr.js
 
 NETWORK:
-http://maps.googleapis.com/maps/api/js?sensor=false
-http://www.google-analytics.com/ga.js
+http://maps.googleapis.com/
+http://www.google-analytics.com/
