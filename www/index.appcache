@@ -1,8 +1,9 @@
 CACHE MANIFEST
-# 2012-02-05:v0
+# 2012-02-05:v2
 
 CACHE:
 index.html
+favicon.ico
 css/Merriweather-Bold.ttf
 css/Merriweather-Light.ttf
 css/Merriweather.ttf
@@ -38,5 +39,16 @@ gfx/webrebels.svg
 js/wr.js
 
 NETWORK:
+http://maps.gstatic.com/
+http://maps.google.com/
 http://maps.googleapis.com/
+http://mt0.googleapis.com/
+http://mt1.googleapis.com/
+http://mt2.googleapis.com/
+http://mt3.googleapis.com/
+http://khm0.googleapis.com/
+http://khm1.googleapis.com/
+http://cbk0.googleapis.com/
+http://cbk1.googleapis.com/
 http://www.google-analytics.com/
+http://gg.google.com/
