@@ -294,6 +294,7 @@ body > div:nth-child( 2 ) {
 .mapbox .map {
     width:                  100%;
     height:                 500px;
+    background-image:       url('http://maps.googleapis.com/maps/api/staticmap?center=59.93604,10.76576&zoom=15&size=720x500&sensor=false&markers=59.93604,10.76576');
 }
 
 
@@ -455,6 +456,8 @@ footer.section {
     }
     .mapbox .map {
         height:                 300px;
+        background-image:       url('http://maps.googleapis.com/maps/api/staticmap?center=59.93604,10.76576&zoom=15&size=558x300&sensor=false&markers=59.93604,10.76576');
+        background-position:    center;
     }
 
 

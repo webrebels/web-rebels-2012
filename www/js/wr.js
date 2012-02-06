@@ -41,13 +41,13 @@
 
 
     // Do map
-
+    
     var map,
         locations = {
             venue : { title : 'Conference Venue', lat : 59.93604, lng : 10.76576 }
         };
 
-    function initialize() {
+    function showMap() {
         var options = {
             zoom: 15,
             center: new google.maps.LatLng( locations.venue.lat, locations.venue.lng ),
@@ -61,10 +61,25 @@
             map: map,
             title: locations.venue.title
         });
+        
+        google.maps.event.addDomListener( window, 'resize', function() {
+            map.setCenter( map.getCenter() );
+        });
     }
-    google.maps.event.addDomListener( window, 'load', initialize );
-    google.maps.event.addDomListener( window, 'resize', function() {
-        map.setCenter( map.getCenter() );
-    });
+    
+    // showMap needs to be global for async map loading
+    window["showMap"] = showMap;
+    
+    function loadMap() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=showMap";
+        document.body.appendChild(script);
+    }
+
+    var isTouchDevice = "ontouchstart" in window;
+    if (!isTouchDevice) {
+        loadMap();
+    }
 
 })();
