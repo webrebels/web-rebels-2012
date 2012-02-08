@@ -79,6 +79,8 @@
 
     var isTouchDevice = "ontouchstart" in window;
     if (!isTouchDevice) {
+        var maplink = document.getElementsByClassName("maplink");
+        if (maplink && maplink.length) maplink[0].style.display = "none";
         loadMap();
     }
 
