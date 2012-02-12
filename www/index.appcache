@@ -1,55 +1,5 @@
 CACHE MANIFEST
-# 2012-02-10:v1
-
-CACHE:
-index.html
-favicon.ico
-css/Merriweather-Bold.ttf
-css/Merriweather-Light.ttf
-css/Merriweather.ttf
-css/rebels.css
-css/sponsors.css
-css/wr.css
-gfx/speaker_andy_osmani_bw.jpg
-gfx/speaker_andy_osmani_color.jpg
-gfx/speaker_christian_johansen_bw.jpg
-gfx/speaker_christian_johansen_color.jpg
-gfx/speaker_erlend_oftedal_small_bw.jpg
-gfx/speaker_erlend_oftedal_small_color.jpg
-gfx/speaker_felix_geisendorfer_bw.jpg
-gfx/speaker_felix_geisendorfer_color.jpg
-gfx/speaker_jari_bakken_bw.jpg
-gfx/speaker_jari_bakken_color.jpg
-gfx/speaker_michal_budzynski_small_bw.jpg
-gfx/speaker_michal_budzynski_small_color.jpg
-gfx/speaker_zed_a_shaw_bw.jpg
-gfx/speaker_zed_a_shaw_color.jpg
-gfx/sponsor-apdm.gif
-gfx/sponsor-arktekk.png
-gfx/sponsor-bekk.png
-gfx/sponsor-finn.png
-gfx/sponsor-kodemaker.png
-gfx/sponsor-making-waves.png
-gfx/sponsor-nokia.png
-gfx/sponsor-programutvikling.png
-gfx/sponsor-skalar.png
-gfx/sponsor-webstep.png
-gfx/webrebels.png
-gfx/webrebels.svg
-js/wr.js
+# 2012-02-10:v2
 
 NETWORK:
-http://maps.gstatic.com/
-http://maps.google.com/
-http://maps.googleapis.com/
-http://mt0.googleapis.com/
-http://mt1.googleapis.com/
-http://mt2.googleapis.com/
-http://mt3.googleapis.com/
-http://khm0.googleapis.com/
-http://khm1.googleapis.com/
-http://cbk0.googleapis.com/
-http://cbk1.googleapis.com/
-http://www.google-analytics.com/
-http://gg.google.com/
-http://csi.gstatic.com/
+*
