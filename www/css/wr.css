@@ -270,17 +270,13 @@ body > div:nth-child( 2 ) {
     opacity:                1;
 }
 /* Calculate position of each "pop-up" */
-.imagebox:nth-child( 1 ) .info,
-.imagebox:nth-child( 4 ) .info,
-.imagebox:nth-child( 7 ) .info {
+.imagebox:nth-child( 3n+1 ) .info {
     left:                   80px;
 }
-.imagebox:nth-child( 2 ) .info,
-.imagebox:nth-child( 5 ) .info {
+.imagebox:nth-child( 3n+2 ) .info {
     left:                   -170px;
 }
-.imagebox:nth-child( 3 ) .info,
-.imagebox:nth-child( 6 ) .info {
+.imagebox:nth-child( 3n ) .info {
     left:                   -420px;
 }
 
@@ -341,9 +337,7 @@ body > div:nth-child( 2 ) {
 	background-position:    center center;
 	background-repeat:      no-repeat;
 }
-.sponsor:nth-child( 1 ),
-.sponsor:nth-child( 5 ),
-.sponsor:nth-child( 9 ) {
+.sponsor:nth-child( 4n+1 ) {
     margin-left:            0;
 }
 
@@ -451,10 +445,16 @@ footer.section {
     }
 
     .info.show {
-        visibility:             hidden;
-        opacity:                0;
+        width:                  150%;
     }
-
+    
+    .imagebox:nth-child( odd ) .info {
+        left:                   0;
+    }
+    .imagebox:nth-child( even ) .info {
+        left:                   auto;
+        right:                  0;
+    }
 
 
     /* Location */
