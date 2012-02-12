@@ -33,9 +33,9 @@
             element[ 0 ].setAttribute('class', styles[ 0 ]);
         }
     }
-
+    
     while( i-- ) {
-        elImageboxes[ i ].addEventListener( youCanTouchThis ? 'touchend' : 'click', toggle);
+        elImageboxes[ i ].addEventListener( 'click', toggle, false);
     }
 
 
@@ -77,8 +77,7 @@
         document.body.appendChild(script);
     }
 
-    var isTouchDevice = "ontouchstart" in window;
-    if (!isTouchDevice) {
+    if (!youCanTouchThis) {
         var maplink = document.getElementsByClassName("maplink");
         if (maplink && maplink.length) maplink[0].style.display = "none";
         loadMap();
