@@ -1,27 +1,27 @@
 /* Michal Budzynski */
-.mb .img { background-image: url('../gfx/speaker_michal_budzynski_small_bw.jpg') }
+.mb .img { background-image: url('../gfx/speaker_michal_budzynski_small_bw.jpg'), url('../gfx/speaker_michal_budzynski_small_color.jpg') }
 .mb:hover .img { background-image: url('../gfx/speaker_michal_budzynski_small_color.jpg') }
 
 /* Erlend Oftedal */
-.eo .img { background-image: url('../gfx/speaker_erlend_oftedal_small_bw.jpg') }
+.eo .img { background-image: url('../gfx/speaker_erlend_oftedal_small_bw.jpg'), url('../gfx/speaker_erlend_oftedal_small_color.jpg') }
 .eo:hover .img { background-image: url('../gfx/speaker_erlend_oftedal_small_color.jpg') }
 
 /* Andy Osmani */
-.ao .img { background-image: url('../gfx/speaker_andy_osmani_bw.jpg') }
+.ao .img { background-image: url('../gfx/speaker_andy_osmani_bw.jpg'), url('../gfx/speaker_andy_osmani_color.jpg') }
 .ao:hover .img { background-image: url('../gfx/speaker_andy_osmani_color.jpg') }
 
 /* Christian Johansen */
-.cj .img { background-image: url('../gfx/speaker_christian_johansen_bw.jpg') }
+.cj .img { background-image: url('../gfx/speaker_christian_johansen_bw.jpg'), url('../gfx/speaker_christian_johansen_color.jpg') }
 .cj:hover .img { background-image: url('../gfx/speaker_christian_johansen_color.jpg') }
 
 /* Felix Geisendörfer */
-.fg .img { background-image: url('../gfx/speaker_felix_geisendorfer_bw.jpg') }
+.fg .img { background-image: url('../gfx/speaker_felix_geisendorfer_bw.jpg'), url('../gfx/speaker_felix_geisendorfer_color.jpg') }
 .fg:hover .img { background-image: url('../gfx/speaker_felix_geisendorfer_color.jpg') }
 
 /* Jari Bakken */
-.jb .img { background-image: url('../gfx/speaker_jari_bakken_bw.jpg') }
+.jb .img { background-image: url('../gfx/speaker_jari_bakken_bw.jpg'), url('../gfx/speaker_jari_bakken_color.jpg') }
 .jb:hover .img { background-image: url('../gfx/speaker_jari_bakken_color.jpg') }
 
 /* Zed A.Shaw */
-.zas .img { background-image: url('../gfx/speaker_zed_a_shaw_bw.jpg') }
+.zas .img { background-image: url('../gfx/speaker_zed_a_shaw_bw.jpg'), url('../gfx/speaker_zed_a_shaw_color.jpg') }
 .zas:hover .img { background-image: url('../gfx/speaker_zed_a_shaw_color.jpg') }
