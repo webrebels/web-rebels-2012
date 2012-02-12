@@ -449,11 +449,11 @@ footer.section {
     }
     
     .imagebox:nth-child( odd ) .info {
-        left:                   0;
+        left:                   35%;
     }
     .imagebox:nth-child( even ) .info {
         left:                   auto;
-        right:                  0;
+        right:                  35%;
     }
 
 
