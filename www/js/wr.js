@@ -46,6 +46,11 @@
         locations = {
             venue : { title : 'Conference Venue', lat : 59.93604, lng : 10.76576 }
         };
+        
+    function hideMapLink() {
+        var maplink = document.getElementsByClassName("maplink");
+        if (maplink && maplink.length) maplink[0].style.display = "none";
+    }
 
     function showMap() {
         var options = {
@@ -65,6 +70,8 @@
         google.maps.event.addDomListener( window, 'resize', function() {
             map.setCenter( map.getCenter() );
         });
+        
+        hideMapLink();
     }
     
     // showMap needs to be global for async map loading
@@ -78,8 +85,6 @@
     }
 
     if (!youCanTouchThis) {
-        var maplink = document.getElementsByClassName("maplink");
-        if (maplink && maplink.length) maplink[0].style.display = "none";
         loadMap();
     }
 
