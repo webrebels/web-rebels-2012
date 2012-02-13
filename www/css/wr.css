@@ -281,8 +281,6 @@ body > div:nth-child( 2 ) {
 }
 
 
-
-
 /* Location */
 .mapbox {
     width:                  720px;
@@ -454,6 +452,18 @@ footer.section {
     .imagebox:nth-child( even ) .info {
         left:                   auto;
         right:                  35%;
+    }
+    
+    /* Position the last row from the bottom */
+    .imagebox:nth-last-child( 1 ) .info,
+    .imagebox:nth-child(2n+1):nth-last-child( 2 ) .info {
+        top:                    auto;
+        bottom:                 80px;
+    }
+    
+    /* Jari needs more space*/
+    .imagebox.jb .info {
+        top:                    -235px;
     }
 
 
