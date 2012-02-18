@@ -40,6 +40,69 @@
 
 
 
+    // Flip map / slideshow
+
+    function mapSlideshowFlip ( ev ) {
+
+        var url = ev.target.href,
+            id = url.substr( url.indexOf('#') + 1 );
+
+        if ( id === 'locationimages' ) {
+            document.getElementById( 'locationimages' ).setAttribute('style', 'display: block;');
+            document.getElementById( 'locationmap' ).setAttribute('style', 'display: none;');
+        }
+
+        if ( id === 'locationmap' ) {
+            document.getElementById( 'locationimages' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'locationmap' ).setAttribute('style', 'display: block;');
+        }
+
+        ev.preventDefault();
+
+    }
+
+    var venueListEl = document.querySelectorAll('#location .left ul')[ 0 ];
+    venueListEl.addEventListener('click', mapSlideshowFlip );
+
+
+
+    // Do venue slideshow
+
+    function slideshowFlip ( direction ) {
+
+        var elFocus     = document.querySelectorAll('.slide.focus')[ 0 ],
+            elNext      = elFocus.nextElementSibling,
+            elPrevious  = elFocus.previousElementSibling;
+
+        if ( direction === 'left' ) {
+            if ( elPrevious.getAttribute('class') === 'slide pre' ) {
+                elFocus.setAttribute('class', 'slide next');
+                elPrevious.setAttribute('class', 'slide focus');
+            }
+        }
+
+        if ( direction === 'right' ) {
+            if ( elNext.getAttribute('class') === 'slide next' ) {
+                elFocus.setAttribute('class', 'slide pre');
+                elNext.setAttribute('class', 'slide focus');
+            }
+        }
+
+    }
+
+    var arrowRight  = document.querySelectorAll('.arrowRight')[ 0 ],
+        arrowLeft   = document.querySelectorAll('.arrowLeft')[ 0 ];
+
+    arrowRight.addEventListener('click', function () {
+        slideshowFlip( 'right' );
+    });
+
+    arrowLeft.addEventListener('click', function () {
+        slideshowFlip( 'left' );
+    });
+
+
+
     // Do map
     
     var map,

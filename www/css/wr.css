@@ -194,6 +194,32 @@ body > div:nth-child( 2 ) {
     border-bottom:          1px solid rgb(66,66,36);
     padding-bottom:         30px;
 }
+.left ul {
+    list-style:             none;
+    margin:                 30px 0 0 0;
+    padding:                0;
+}
+.left li {
+    margin:                 0 0 5px 0;
+}
+.left li a {
+    display:                block;
+    padding:                9px 7px 8px 7px;
+    background-color:       rgb(28,28,28);
+    color:                  rgb(135,135,74);
+    font-size:              13px;
+    font-weight:            400;
+    text-decoration:        none;
+    width:                  204px;
+    border:                 1px solid rgb(28,28,28);
+    border-color:           #272727 rgb(28,28,28) #1b1b1b;
+    border-radius:          3px;
+}
+.left li a:hover {
+    background-color:       #131313;
+    color:                  #f1f1eb;
+    border-color:           #252525 #131313 #000000;
+}
 
 
 
@@ -283,12 +309,12 @@ body > div:nth-child( 2 ) {
 
 /* Location */
 .mapbox {
-    width:                  720px;
+    width:                  100%;
     position:               relative;
 }
 .mapbox .map {
-    width:                  100%;
     height:                 500px;
+    width:                  100%;
 }
 .maplink {
     display:                block;
@@ -300,9 +326,61 @@ body > div:nth-child( 2 ) {
 
 
 
+/* Location - Images */
+#location .images {
+    width:                  720px;
+    height:                 500px;
+    position:               relative;
+    overflow:               hidden;
+    display:                none;
+}
+#location .images .pre,
+#location .images .focus,
+#location .images .next {
+    position:               absolute;
+    top:                    0;
+    left:                   0;
+    width:                  100%;
+    height:		            100%;
+    -webkit-transition:     all 200ms linear;
+    -moz-transition:        all 200ms linear;
+    -o-transition:          all 200ms linear;
+    transition:             all 200ms linear;
+}
+#location .images .pre {
+    left:                   -100%;
+}
+#location .images .next {
+    left:                   100%;
+}
+
+.arrowLeft,
+.arrowRight {
+    position:               absolute;
+    width:                  15%;
+    height:                 20%;
+    top:                    40%;
+    background-color:       rgba(0,0,0,0.6);
+    z-index:                2000;
+    cursor:                 pointer;
+    background-position:    center center;
+    background-repeat:      no-repeat;
+}
+
+.arrowLeft {
+    background-image:       url('../gfx/arrow_left.png');
+}
+
+.arrowRight {
+    right:                  0;
+    background-image:       url('../gfx/arrow_right.png');
+}
+
+
+
 /* Schedule */
 .schedule {
-    width:                  100%;
+    width:                  720px;
 }
 .schedule .time {
     font-size:              .75em;
@@ -425,6 +503,19 @@ footer.section {
         margin:                 0 0 8px 0;
     }
 
+    .left ul {
+        margin:                 0 0 30px 0;
+        overflow:               hidden;
+    }
+    .left li {
+        margin:                 0;
+        float:                  left;
+        width:                  24%;
+    }
+    .left li a {
+        width:                  70%;
+        text-align:             center;
+    }
 
 
     /* Image box in the main content area */
@@ -471,7 +562,9 @@ footer.section {
     .mapbox {
         width:                  100%;
     }
-    .mapbox .map {
+    .mapbox .map,
+    #location .images {
+        width:                  100%;
         height:                 300px;
         background-position:    center;
     }
@@ -479,8 +572,16 @@ footer.section {
         background-image:       url('http://maps.googleapis.com/maps/api/staticmap?center=59.93604,10.76576&zoom=15&size=558x300&sensor=false&markers=59.93604,10.76576');
     }
 
+    #location .slide {
+        background-size:        100% 100%;
+    }
+
+
 
     /* Schedule */
+    .schedule {
+        width:                  100%;
+    }
     .schedule .time {
         width:                  25%;
     }
