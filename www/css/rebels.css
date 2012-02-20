@@ -25,3 +25,10 @@
 /* Zed A.Shaw */
 .zas .img { background-image: url('../gfx/speaker_zed_a_shaw_bw.jpg'), url('../gfx/speaker_zed_a_shaw_color.jpg') }
 .zas:hover .img { background-image: url('../gfx/speaker_zed_a_shaw_color.jpg') }
+
+/* Nikolai Onken */
+.no .img { background-image: url('../gfx/speaker_nikolai_onken_bw.jpg'), url('../gfx/speaker_nikolai_onken_color.jpg') }
+.no:hover .img { background-image: url('../gfx/speaker_nikolai_onken_color.jpg') }
+
+.tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
+.tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
