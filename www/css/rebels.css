@@ -30,5 +30,9 @@
 .no .img { background-image: url('../gfx/speaker_nikolai_onken_bw.jpg'), url('../gfx/speaker_nikolai_onken_color.jpg') }
 .no:hover .img { background-image: url('../gfx/speaker_nikolai_onken_color.jpg') }
 
+/* Brian LeRoux */
+.blr .img { background-image: url('../gfx/speaker_brian_leroux_bw.jpg'), url('../gfx/speaker_brian_leroux_color.jpg') }
+.blr:hover .img { background-image: url('../gfx/speaker_brian_leroux_color.jpg') }
+
 .tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
 .tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
