@@ -151,4 +151,48 @@
         loadMap();
     }
 
+
+
+    // Flip schedule
+
+    function scheduleFlip ( ev ) {
+
+        var url = ev.target.href,
+            id = url.substr( url.indexOf('#') + 1 );
+
+        if ( id === 'dayI' ) {
+            document.getElementById( 'dayI' ).setAttribute('style', 'display: table;');
+            document.getElementById( 'dayII' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayIII' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayIV' ).setAttribute('style', 'display: none;');
+        }
+
+        if ( id === 'dayII' ) {
+            document.getElementById( 'dayI' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayII' ).setAttribute('style', 'display: table;');
+            document.getElementById( 'dayIII' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayIV' ).setAttribute('style', 'display: none;');
+        }
+
+        if ( id === 'dayIII' ) {
+            document.getElementById( 'dayI' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayII' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayIII' ).setAttribute('style', 'display: table;');
+            document.getElementById( 'dayIV' ).setAttribute('style', 'display: none;');
+        }
+
+        if ( id === 'dayIV' ) {
+            document.getElementById( 'dayI' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayII' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayIII' ).setAttribute('style', 'display: none;');
+            document.getElementById( 'dayIV' ).setAttribute('style', 'display: table;');
+        }
+
+        ev.preventDefault();
+
+    }
+
+    var scheduleListEl = document.querySelectorAll('#schedule .left ul')[ 0 ];
+    scheduleListEl.addEventListener('click', scheduleFlip );
+
 })();

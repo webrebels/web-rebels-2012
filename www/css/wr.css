@@ -382,6 +382,10 @@ body > div:nth-child( 2 ) {
 .schedule {
     width:                  720px;
 }
+.schedule th {
+    float:                  left;
+    margin-bottom:          18px;
+}
 .schedule .time {
     font-size:              .75em;
     font-weight:            300;
@@ -399,6 +403,9 @@ body > div:nth-child( 2 ) {
     font-weight:            300;
     line-height:            22px;
     color:                  rgb(135,135,74);
+}
+#dayI, #dayIII, #dayIV {
+    display:                none;
 }
 
 
