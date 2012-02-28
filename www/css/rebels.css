@@ -34,5 +34,10 @@
 .blr .img { background-image: url('../gfx/speaker_brian_leroux_bw.jpg'), url('../gfx/speaker_brian_leroux_color.jpg') }
 .blr:hover .img { background-image: url('../gfx/speaker_brian_leroux_color.jpg') }
 
+/* Vyacheslav Egorov */
+.ve .img { background-image: url('../gfx/speaker_vyacheslav_egorov_bw.jpg'), url('../gfx/speaker_vyacheslav_egorov_color.jpg') }
+.ve:hover .img { background-image: url('../gfx/speaker_vyacheslav_egorov_color.jpg') }
+
+
 .tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
 .tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
