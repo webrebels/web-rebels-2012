@@ -38,6 +38,10 @@
 .ve .img { background-image: url('../gfx/speaker_vyacheslav_egorov_bw.jpg'), url('../gfx/speaker_vyacheslav_egorov_color.jpg') }
 .ve:hover .img { background-image: url('../gfx/speaker_vyacheslav_egorov_color.jpg') }
 
+/* Jake Archibald */
+.ja .img { background-image: url('../gfx/speaker_jake_archibald_bw.jpg'), url('../gfx/speaker_jake_archibald_color.jpg') }
+.ja:hover .img { background-image: url('../gfx/speaker_jake_archibald_color.jpg') }
+
 
 .tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
 .tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
