@@ -1,4 +1,12 @@
 (function() {
+    
+    if (window.applicationCache) {
+        applicationCache.addEventListener('updateready', function() {
+            if (confirm('An update is available. Reload now?')) {
+                window.location.reload();
+            }
+        });
+    }
 
     /* Toggle off message for older browsers */
     var surprompenEl    = document.getElementById('surprompen'),
@@ -194,5 +202,4 @@
 
     var scheduleListEl = document.querySelectorAll('#schedule .left ul')[ 0 ];
     scheduleListEl.addEventListener('click', scheduleFlip );
-
 })();
