@@ -73,23 +73,12 @@ a {
 .page {
     margin:                 0 auto;
     width:                  970px;
-    display:                none;
 }
-
-
-
-/* Show users with older browsers that they need a new browser */
-body > div:nth-of-type( 1n+1 ) {
-    display:                block;
-}
-body > div:nth-last-of-type( 1 ) {
-    display:                none;
-}
-
 
 
 /* Message to users with older browsers */
 #surprompen {
+    display:                none;
     text-align:             center;
     border:                 10px solid white;
     width:                  60%;

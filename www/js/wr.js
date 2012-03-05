@@ -1,4 +1,8 @@
 (function() {
+    var supportedBrowser = (
+        !!document.querySelectorAll &&
+        !!document.getElementsByClassName
+    );
     
     if (window.applicationCache) {
         applicationCache.addEventListener('updateready', function() {
@@ -16,6 +20,11 @@
         surprompenEl.style.display = 'none';
         pageEl.style.display = 'block';
     };
+    
+    if ( !supportedBrowser ) {
+        surprompenEl.style.display = 'block';
+        pageEl.style.display = 'none';
+    }
 
 
 
