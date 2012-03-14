@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2012-03-05:v2
+# 2012-03-14:v2
 
 CACHE:
 index.html
@@ -32,6 +32,8 @@ gfx/speaker_vyacheslav_egorov_bw.jpg
 gfx/speaker_vyacheslav_egorov_color.jpg
 gfx/speaker_jake_archibald_bw.jpg
 gfx/speaker_jake_archibald_color.jpg
+gfx/speaker_jerome_etienne_bw.jpg
+gfx/speaker_jerome_etienne_color.jpg
 gfx/speaker_TBA_bw.jpg
 gfx/speaker_TBA_color.jpg
 gfx/sponsor-apdm.gif
@@ -48,6 +50,8 @@ gfx/sponsor-microsoft.png
 gfx/sponsor-opera.png
 gfx/sponsor-iterate.png
 gfx/sponsor-knowit.png
+gfx/sponsor-daldata.png
+gfx/sponsor-kantega.png
 gfx/webrebels.png
 gfx/webrebels.svg
 gfx/arrow_left.png

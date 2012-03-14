@@ -42,6 +42,10 @@
 .ja .img { background-image: url('../gfx/speaker_jake_archibald_bw.jpg'), url('../gfx/speaker_jake_archibald_color.jpg') }
 .ja:hover .img { background-image: url('../gfx/speaker_jake_archibald_color.jpg') }
 
+/* Jérôme Etienne */
+.je .img { background-image: url('../gfx/speaker_jerome_etienne_bw.jpg'), url('../gfx/speaker_jerome_etienne_color.jpg') }
+.je:hover .img { background-image: url('../gfx/speaker_jerome_etienne_color.jpg') }
+
 
 .tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
 .tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
