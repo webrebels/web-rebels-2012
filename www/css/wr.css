@@ -67,6 +67,9 @@ a {
     text-decoration:        none;
 }
 
+.additional a {
+    text-decoration:        underline;
+}
 
 
 /* Page width values */
