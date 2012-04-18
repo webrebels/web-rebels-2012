@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2012-04-13:v1
+# 2012-04-18:v1
 
 CACHE:
 index.html
@@ -38,6 +38,8 @@ gfx/speaker_bernd_mrohs_bw.jpg
 gfx/speaker_bernd_mrohs_color.jpg
 gfx/speaker_p01_bw.jpg
 gfx/speaker_p01_color.jpg
+gfx/speaker_august_lilleaas_color.jpg
+gfx/speaker_august_lilleaas_bw.jpg
 gfx/speaker_TBA_bw.jpg
 gfx/speaker_TBA_color.jpg
 gfx/sponsor-apdm.gif

@@ -54,6 +54,10 @@
 .p01 .img { background-image: url('../gfx/speaker_p01_bw.jpg'), url('../gfx/speaker_p01_color.jpg') }
 .p01:hover .img { background-image: url('../gfx/speaker_p01_color.jpg') }
 
+/* August Lilleaas */
+.al .img { background-image: url('../gfx/speaker_august_lilleaas_bw.jpg'), url('../gfx/speaker_august_lilleaas_color.jpg') }
+.al:hover .img { background-image: url('../gfx/speaker_august_lilleaas_color.jpg') }
+
 
 .tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
 .tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
