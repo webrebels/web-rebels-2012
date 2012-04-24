@@ -58,6 +58,9 @@
 .al .img { background-image: url('../gfx/speaker_august_lilleaas_bw.jpg'), url('../gfx/speaker_august_lilleaas_color.jpg') }
 .al:hover .img { background-image: url('../gfx/speaker_august_lilleaas_color.jpg') }
 
+/* Dave Herman */
+.dh .img { background-image: url('../gfx/speaker_dave_herman_bw.jpg'), url('../gfx/speaker_dave_herman_color.jpg') }
+.dh:hover .img { background-image: url('../gfx/speaker_dave_herman_color.jpg') }
 
 .tba .img { background-image: url('../gfx/speaker_TBA_bw.jpg'), url('../gfx/speaker_TBA_color.jpg') }
 .tba:hover .img { background-image: url('../gfx/speaker_TBA_color.jpg') }
