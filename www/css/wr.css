@@ -288,6 +288,9 @@ a {
     line-height:            26px;
     margin-bottom:          18px;
 }
+.guide .imagebox {
+    min-height:             430px;
+}
 .info.show {
     visibility:             visible;
     opacity:                1;
