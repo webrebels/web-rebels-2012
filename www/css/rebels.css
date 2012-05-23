@@ -62,6 +62,12 @@
 .dh .img { background-image: url('../gfx/speaker_dave_herman_bw.jpg'), url('../gfx/speaker_dave_herman_color.jpg') }
 .dh:hover .img { background-image: url('../gfx/speaker_dave_herman_color.jpg') }
 
-/* Reginald Braithwaite */
+/* Reginald Braithwaite
 .rb .img { background-image: url('../gfx/speaker_reginald_braithwaite_bw.jpg'), url('../gfx/speaker_reginald_braithwaite_color.jpg') }
 .rb:hover .img { background-image: url('../gfx/speaker_reginald_braithwaite_color.jpg') }
+*/
+
+/* Glenn Block */
+.gb .img { background-image: url('../gfx/speaker_glenn_block_bw.jpg'), url('../gfx/speaker_glenn_block_bw.jpg') }
+.gb:hover .img { background-image: url('../gfx/speaker_glenn_block_bw.jpg') }
+
