@@ -226,7 +226,16 @@ a {
 	font-weight:            300;
 	line-height:            26px;
 }
-
+.right li {
+    list-style:             circle;
+    font-size:              .875em;
+    font-weight:            300;
+    line-height:            26px;
+}
+.right ul {
+    margin-top:             0;
+    padding-top:            0;
+}
 
 /* Image box in the main content area */
 .imagebox,
