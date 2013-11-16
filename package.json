@@ -1,6 +1,6 @@
 {
-  "name": "webrebels.org",
-  "version": "0.0.1",
+  "name": "web-rebels-2012",
+  "version": "0.0.1-1",
   "author": {
     "name": "Web Rebels",
     "email": "kontor@webrebels.org"
@@ -42,6 +42,8 @@
   },
   "licenses": [],
   "subdomain": "webreb2012",
-  "dependencies": {
-  }
+  "domains": [
+    "2012.webrebels.org"
+  ],
+  "dependencies": {}
 }
