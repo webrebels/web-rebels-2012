@@ -21,41 +21,11 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Development Environment
------------------------
-
-Refer to
-[the Heroku Dev Center](http://devcenter.heroku.com/articles/node-js)
-for the recommended version of Node.js. At the time of writing, this
-is version 0.4.7. We recommend that you use
-[N](https://github.com/visionmedia/n) to manage your Node versions:
-
-    $ npm install -g n
-    $ n 0.4.7
-
-Install the [Heroku Toolbelt](http://toolbelt.heroku.com/), and log in
-to your Heroku account:
-
-    $ heroku auth:login
-    
-Now clone the Github repo and configure it for deployment to Heroku:
+## Development Environment
 
     $ git clone git@github.com:webrebels/webrebels.org.git
     $ cd webrebels.org
     $ npm install
-    $ git remote add staging git@heroku.com:webrebels-staging.git
-    $ git remote add production git@heroku.com:webrebels.git
-
-You can now deploy the app to the different server environments using
-`git push`:
-
-    $ git push staging
-    $ git push production
-
-You can use the Heroku Toolbelt to monitor the app:
-
-    $ heroku logs --remote staging
-    $ heroku logs --remote production
 
 To simplify development, you can have your local server restart
 automatically whenever you change something by launching it through
@@ -63,4 +33,16 @@ Runlol:
 
     $ npm install -g runlol
     $ runlol
+
+Or just do:
+
+    $ node server.js
+
+## Deploying
+
+Install the [jitsu-cli](https://www.nodejitsu.com/documentation/jitsu/), and log in the conference account and deploy:
+
+    $ jitsu deploy
+
+That's it, a new version is deployed. This app is deployed as a subdomain on (2012.webrebels.org)[http://2012.webrebels.org]
 
