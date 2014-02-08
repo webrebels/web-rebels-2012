@@ -1,0 +1,612 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Merriweather'), url('Merriweather.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url('Merriweather-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url('Merriweather-Bold.ttf') format('truetype');
+}
+
+
+
+/* Do revolution! Make browsers behave in a normalized way! Fuckers! */
+body, h1, div, p, img, table, tr, td, header, footer, section, article, nav {
+    margin:                 0;
+    padding:                0;
+}
+
+
+/* Default values */
+body {
+    font-family:            'Merriweather', Georgia;
+    font-size:              100%;                                                               /* ~16px; */
+    line-height:            1.5;
+    background-color:       rgb(34,34,34);
+    color:                  rgb(241,241,235);
+}
+
+img {
+    border:                 0;
+}
+.img {
+    background-position:    center center;
+	background-repeat:      no-repeat;
+}
+
+table {
+    width:                  96%;
+    border-collapse:        collapse;
+}
+tr {
+    color:                  rgb(240,240,234);
+}
+tr:nth-child( even ) {
+    background-color:       rgb(26,26,26);
+
+}
+tr:nth-child( odd ) {
+    background-color:       rgb(33,33,33);
+}
+td {
+    padding:                2%;
+    vertical-align:         top;
+}
+
+a {
+    color:                  rgb(137,137,75);
+    text-decoration:        none;
+}
+
+.additional a {
+    text-decoration:        underline;
+}
+
+
+/* Page width values */
+.page {
+    margin:                 0 auto;
+    width:                  970px;
+}
+
+
+/* Message to users with older browsers */
+#surprompen {
+    display:                none;
+    text-align:             center;
+    border:                 10px solid white;
+    width:                  60%;
+    padding:                10%;
+    margin:                 60px auto 0 auto;
+    font-size:              1.725em;
+    cursor:                 pointer;
+}
+
+
+
+
+/* Logo at the top of the page */
+.logo {
+    margin-top:             30px;
+}
+.logo object {
+    margin:                 auto;
+    display:                block;
+    width:                  391px;
+    height:                 201px;
+}
+.logo h1 {
+    color:                  rgb(137,137,75);
+    text-align:             center;
+}
+
+
+
+/* Menu at the top of the page */
+.menu {
+    text-align:             center;
+    overflow:               hidden;
+    margin:                 40px 0 40px 0;
+}
+.menu a {
+    display:                inline-block;
+	margin:                 10px;
+	padding:                7px 7px 5px 7px;
+	font-size:              1.125em;
+	font-weight:            400;
+	text-decoration:        none;
+	background-color:       rgb(30,30,30);
+	border:                 1px solid rgb(34,34,34);
+	border-color:           rgb(39,39,39) rgb(30,30,30) rgb(27,27,27);
+	border-radius:          3px;
+}
+.menu a:hover {
+	background-color:       rgb(19,19,19);
+	border-color:           rgb(37,37,37) rgb(19,19,19) rgb(0,0,0);
+	box-shadow:             0px 1px 4px rgba(0,0,0,.2);
+}
+
+
+
+/* Default grid for the main content */
+.section {
+	border-top:             1px solid rgb(66,66,36);
+	padding:                30px 0 70px 0;
+    overflow:               hidden;
+}
+.section .left {
+	width:                  220px;
+	float:                  left;
+}
+.section .right {
+	width:                  750px;
+	float:                  left;
+}
+
+
+
+/* Spacing of first level elements inside the grid for the main content */
+.right > div,
+.right > p {
+    float:                  left;
+}
+.right > div,
+.right > table,
+.sponsor  {
+    margin:                 0 0 30px 30px;
+}
+.right > p {
+    margin:                 0 0 18px 30px;
+}
+
+
+#volunteer .right > p {
+    float:                  none;
+}
+
+
+
+
+/* Left column in the main content area */
+.left h1 {
+    font-size:              1.125em;
+    font-weight:            600;
+    line-height:            26px;
+    margin:                 0 0 18px 0;
+}
+.left p {
+    font-size:              .75em;
+    font-weight:            400;
+    line-height:            22px;
+    color:                  rgb(137,137,75);
+    border-bottom:          1px solid rgb(66,66,36);
+    padding-bottom:         30px;
+}
+.left ul {
+    list-style:             none;
+    margin:                 30px 0 0 0;
+    padding:                0;
+}
+.left li {
+    margin:                 0 0 5px 0;
+}
+.left li a {
+    display:                block;
+    padding:                9px 7px 8px 7px;
+    background-color:       rgb(28,28,28);
+    color:                  rgb(135,135,74);
+    font-size:              13px;
+    font-weight:            400;
+    text-decoration:        none;
+    width:                  204px;
+    border:                 1px solid rgb(28,28,28);
+    border-color:           #272727 rgb(28,28,28) #1b1b1b;
+    border-radius:          3px;
+}
+.left li a:hover {
+    background-color:       #131313;
+    color:                  #f1f1eb;
+    border-color:           #252525 #131313 #000000;
+}
+
+
+
+/* Right column in the main content area */
+.right p {
+	font-size:              .875em;
+	font-weight:            300;
+	line-height:            26px;
+}
+.right li {
+    list-style:             circle;
+    font-size:              .875em;
+    font-weight:            300;
+    line-height:            26px;
+}
+.right ul {
+    margin-top:             0;
+    padding-top:            0;
+}
+
+/* Image box in the main content area */
+.imagebox,
+.mapbox {
+    position:               relative;
+    background-color:       rgb(19,19,19);
+    width:                  220px;
+    border-radius:          3px;
+    border-bottom:          1px solid rgb(0,0,0);
+}
+.imagebox .img {
+    height:                 142px;
+    cursor:                 pointer;
+    -webkit-transition:     background-image 400ms ease-in;
+    -moz-transition:        background-image 400ms ease-in;
+    -ms-transition:         background-image 400ms ease-in;
+    -o-transition:          background-image 400ms ease-in;
+    transition:             background-image 400ms ease-in;
+}
+.imagebox .header,
+.mapbox .header {
+    font-size:              .813em;
+    font-weight:            300;
+    line-height:            20px;
+    color:                  rgb(240,240,234);
+    padding:                0;
+    margin:                 8px 10px 4px 8px;
+}
+.imagebox .subheader,
+.mapbox .subheader {
+    font-size:              .75em;
+    font-weight:            300;
+    line-height:            15px;
+    color:                  rgb(135,135,74);
+    padding:                0;
+    margin:                 0 10px 3px 8px;
+}
+.imagebox .info {
+    position:               absolute;
+    top:                    80px;
+    visibility:             hidden;
+    z-index:                2000;
+    width:                  523px;
+    padding:                18px 18px 0 18px;
+    background-color:       rgb(19,19,19);
+    border-radius:          3px;
+    box-shadow:             1px 1px rgb(0,0,0);
+    opacity:                0;
+    -webkit-transition:     opacity 400ms ease-in;
+    -moz-transition:        opacity 400ms ease-in;
+    -ms-transition:         opacity 400ms ease-in;
+    -o-transition:          opacity 400ms ease-in;
+    transition:             opacity 400ms ease-in;
+
+}
+.imagebox .info p {
+    font-size:              .875em;
+    font-weight:            300;
+    line-height:            26px;
+    margin-bottom:          18px;
+}
+.guide .imagebox {
+    min-height:             350px;
+}
+.info.show {
+    visibility:             visible;
+    opacity:                1;
+}
+/* Calculate position of each "pop-up" */
+.imagebox:nth-child( 3n+1 ) .info {
+    left:                   80px;
+}
+.imagebox:nth-child( 3n+2 ) .info {
+    left:                   -170px;
+}
+.imagebox:nth-child( 3n ) .info {
+    left:                   -420px;
+}
+
+
+/* Location */
+.mapbox {
+    width:                  100%;
+    position:               relative;
+}
+.mapbox .map {
+    height:                 500px;
+    width:                  100%;
+}
+.maplink {
+    display:                block;
+    position:               absolute;
+    top:                    0;
+    left:                   0;
+    background-image:       url('http://maps.googleapis.com/maps/api/staticmap?center=59.93604,10.76576&zoom=15&size=720x500&sensor=false&markers=59.93604,10.76576');
+}
+
+
+
+/* Location - Images */
+#location .images {
+    width:                  720px;
+    height:                 500px;
+    position:               relative;
+    overflow:               hidden;
+    display:                none;
+}
+#location .images .pre,
+#location .images .focus,
+#location .images .next {
+    position:               absolute;
+    top:                    0;
+    left:                   0;
+    width:                  100%;
+    height:		            100%;
+    -webkit-transition:     all 200ms linear;
+    -moz-transition:        all 200ms linear;
+    -o-transition:          all 200ms linear;
+    transition:             all 200ms linear;
+}
+#location .images .pre {
+    left:                   -100%;
+}
+#location .images .next {
+    left:                   100%;
+}
+
+.arrowLeft,
+.arrowRight {
+    position:               absolute;
+    width:                  15%;
+    height:                 20%;
+    top:                    40%;
+    background-color:       rgba(0,0,0,0.6);
+    z-index:                2000;
+    cursor:                 pointer;
+    background-position:    center center;
+    background-repeat:      no-repeat;
+}
+
+.arrowLeft {
+    background-image:       url('../gfx/arrow_left.png');
+}
+
+.arrowRight {
+    right:                  0;
+    background-image:       url('../gfx/arrow_right.png');
+}
+
+
+
+/* Schedule */
+.schedule {
+    width:                  720px;
+}
+.schedule th {
+    text-align:             left;
+    padding-bottom:         18px;
+}
+.schedule .time {
+    font-size:              .75em;
+    font-weight:            300;
+    color:                  rgb(240,240,234);
+    width:                  100px;
+}
+.schedule .title {
+    font-size:              .875em;
+    font-weight:            400;
+    color:                  rgb(240,240,234);
+    width:                  170px;
+}
+.schedule .additional {
+    font-size:              .75em;
+    font-weight:            300;
+    line-height:            22px;
+    color:                  rgb(135,135,74);
+}
+#dayI, #dayIII, #dayIV {
+    display:                none;
+}
+
+
+
+/* Sponsors */
+.sponsor {
+    float:                  left;
+    border:                 1px solid rgb(0,0,0);
+    background:             rgb(255,255,255);
+    height:                 140px;
+    width:                  218px;
+	background-position:    center center;
+	background-repeat:      no-repeat;
+}
+.sponsor:nth-child( 4n+1 ) {
+    margin-left:            0;
+}
+
+#sponsors p {
+    font-size:              .875em;
+    font-weight:            300;
+    line-height:            26px;
+}
+
+
+
+/* Page footer */
+footer.section {
+    font-size:              .875em;
+    text-align:             right;
+}
+
+
+
+/* Be responsive for smaller rebels - These values override above values */
+@media all and (max-width: 620px) {
+
+
+    /* Page width values */
+    .page {
+        width:              90%;
+    }
+
+
+
+    /* Logo at the top of the page */
+    .logo object {
+        width:                  290px;
+        height:                 149px;
+        background-position:    center center;
+        background-repeat:      no-repeat;
+        background-image:       url('../gfx/webrebels.png')
+    }
+
+
+
+    /* Menu at the top of the page */
+    .menu a {
+        margin:                 5px;
+    }
+
+
+
+    /* Default grid for the main content */
+    .section {
+        padding:                30px 0 30px 0;
+    }
+    .section .left {
+        width:                  100%;
+        float:                  none;
+    }
+    .section .right {
+        width:                  100%;
+        float:                  none;
+    }
+
+    .left p {
+        border-bottom:          none;
+    }
+
+
+
+    /* Spacing of first level elements inside the grid for the main content */
+    .right > div,
+    .right > p {
+        float:                  left;
+    }
+    .right > div,
+    .right > table,
+    .sponsor {
+        margin:                 0 0 30px 0;
+    }
+    .right > p {
+        margin:                 0 0 18px 0;
+    }
+
+
+
+    /* Left column in the main content area */
+    .left h1 {
+        font-size:              1.625em;
+        margin:                 0 0 8px 0;
+    }
+
+    .left ul {
+        margin:                 0 0 30px 0;
+        overflow:               hidden;
+    }
+    .left li {
+        margin:                 0;
+        float:                  left;
+        width:                  24%;
+    }
+    .left li a {
+        width:                  70%;
+        text-align:             center;
+    }
+
+
+    /* Image box in the main content area */
+    .imagebox,
+    .sponsor {
+        width:                  48%;
+    }
+    .imagebox:nth-child( odd ),
+    .sponsor:nth-child( odd ) {
+        float:                  left;
+        clear:                  both;
+    }
+    .imagebox:nth-child( even ),
+    .sponsor:nth-child( even ) {
+        float:                  right;
+    }
+
+    .info.show {
+        width:                  150%;
+    }
+    
+    .imagebox:nth-child( odd ) .info {
+        left:                   35%;
+    }
+    .imagebox:nth-child( even ) .info {
+        left:                   auto;
+        right:                  35%;
+    }
+    
+    /* Position the last row from the bottom */
+    .imagebox:nth-last-child( 1 ) .info,
+    .imagebox:nth-child(2n+1):nth-last-child( 2 ) .info {
+        top:                    auto;
+        bottom:                 80px;
+    }
+    
+    /* Jari needs more space*/
+    .imagebox.jb .info {
+        top:                    -500px;
+    }
+
+
+    /* Location */
+    .mapbox {
+        width:                  100%;
+    }
+    .mapbox .map,
+    #location .images {
+        width:                  100%;
+        height:                 300px;
+        background-position:    center;
+    }
+    .maplink {
+        background-image:       url('http://maps.googleapis.com/maps/api/staticmap?center=59.93604,10.76576&zoom=15&size=558x300&sensor=false&markers=59.93604,10.76576');
+    }
+
+    #location .slide {
+        background-size:        100% 100%;
+    }
+
+
+
+    /* Schedule */
+    .schedule {
+        width:                  100%;
+    }
+    .schedule .time {
+        width:                  25%;
+    }
+    .schedule .title {
+        width:                  25%;
+    }
+    .schedule .additional {
+        width:                  50%;
+    }
+
+
+}

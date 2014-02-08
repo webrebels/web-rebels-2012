@@ -1,0 +1,73 @@
+/* Michal Budzynski */
+.mb .img { background-image: url('../gfx/speaker_michal_budzynski_small_bw.jpg'), url('../gfx/speaker_michal_budzynski_small_color.jpg') }
+.mb:hover .img { background-image: url('../gfx/speaker_michal_budzynski_small_color.jpg') }
+
+/* Erlend Oftedal */
+.eo .img { background-image: url('../gfx/speaker_erlend_oftedal_small_bw.jpg'), url('../gfx/speaker_erlend_oftedal_small_color.jpg') }
+.eo:hover .img { background-image: url('../gfx/speaker_erlend_oftedal_small_color.jpg') }
+
+/* Andy Osmani */
+.ao .img { background-image: url('../gfx/speaker_andy_osmani_bw.jpg'), url('../gfx/speaker_andy_osmani_color.jpg') }
+.ao:hover .img { background-image: url('../gfx/speaker_andy_osmani_color.jpg') }
+
+/* Christian Johansen */
+.cj .img { background-image: url('../gfx/speaker_christian_johansen_bw.jpg'), url('../gfx/speaker_christian_johansen_color.jpg') }
+.cj:hover .img { background-image: url('../gfx/speaker_christian_johansen_color.jpg') }
+
+/* Felix Geisendörfer */
+.fg .img { background-image: url('../gfx/speaker_felix_geisendorfer_bw.jpg'), url('../gfx/speaker_felix_geisendorfer_color.jpg') }
+.fg:hover .img { background-image: url('../gfx/speaker_felix_geisendorfer_color.jpg') }
+
+/* Jari Bakken */
+.jb .img { background-image: url('../gfx/speaker_jari_bakken_bw.jpg'), url('../gfx/speaker_jari_bakken_color.jpg') }
+.jb:hover .img { background-image: url('../gfx/speaker_jari_bakken_color.jpg') }
+
+/* Zed A.Shaw */
+.zas .img { background-image: url('../gfx/speaker_zed_a_shaw_bw.jpg'), url('../gfx/speaker_zed_a_shaw_color.jpg') }
+.zas:hover .img { background-image: url('../gfx/speaker_zed_a_shaw_color.jpg') }
+
+/* Nikolai Onken */
+.no .img { background-image: url('../gfx/speaker_nikolai_onken_bw.jpg'), url('../gfx/speaker_nikolai_onken_color.jpg') }
+.no:hover .img { background-image: url('../gfx/speaker_nikolai_onken_color.jpg') }
+
+/* Brian LeRoux */
+.blr .img { background-image: url('../gfx/speaker_brian_leroux_bw.jpg'), url('../gfx/speaker_brian_leroux_color.jpg') }
+.blr:hover .img { background-image: url('../gfx/speaker_brian_leroux_color.jpg') }
+
+/* Vyacheslav Egorov */
+.ve .img { background-image: url('../gfx/speaker_vyacheslav_egorov_bw.jpg'), url('../gfx/speaker_vyacheslav_egorov_color.jpg') }
+.ve:hover .img { background-image: url('../gfx/speaker_vyacheslav_egorov_color.jpg') }
+
+/* Jake Archibald */
+.ja .img { background-image: url('../gfx/speaker_jake_archibald_bw.jpg'), url('../gfx/speaker_jake_archibald_color.jpg') }
+.ja:hover .img { background-image: url('../gfx/speaker_jake_archibald_color.jpg') }
+
+/* Jérôme Etienne */
+.je .img { background-image: url('../gfx/speaker_jerome_etienne_bw.jpg'), url('../gfx/speaker_jerome_etienne_color.jpg') }
+.je:hover .img { background-image: url('../gfx/speaker_jerome_etienne_color.jpg') }
+
+/* Bernd Mrohs */
+.bm .img { background-image: url('../gfx/speaker_bernd_mrohs_bw.jpg'), url('../gfx/speaker_bernd_mrohs_color.jpg') }
+.bm:hover .img { background-image: url('../gfx/speaker_bernd_mrohs_color.jpg') }
+
+/* p01 */
+.p01 .img { background-image: url('../gfx/speaker_p01_bw.jpg'), url('../gfx/speaker_p01_color.jpg') }
+.p01:hover .img { background-image: url('../gfx/speaker_p01_color.jpg') }
+
+/* August Lilleaas */
+.al .img { background-image: url('../gfx/speaker_august_lilleaas_bw.jpg'), url('../gfx/speaker_august_lilleaas_color.jpg') }
+.al:hover .img { background-image: url('../gfx/speaker_august_lilleaas_color.jpg') }
+
+/* Dave Herman */
+.dh .img { background-image: url('../gfx/speaker_dave_herman_bw.jpg'), url('../gfx/speaker_dave_herman_color.jpg') }
+.dh:hover .img { background-image: url('../gfx/speaker_dave_herman_color.jpg') }
+
+/* Reginald Braithwaite
+.rb .img { background-image: url('../gfx/speaker_reginald_braithwaite_bw.jpg'), url('../gfx/speaker_reginald_braithwaite_color.jpg') }
+.rb:hover .img { background-image: url('../gfx/speaker_reginald_braithwaite_color.jpg') }
+*/
+
+/* Glenn Block */
+.gb .img { background-image: url('../gfx/speaker_glenn_block_bw.jpg'), url('../gfx/speaker_glenn_block_bw.jpg') }
+.gb:hover .img { background-image: url('../gfx/speaker_glenn_block_bw.jpg') }
+
