@@ -1,0 +1,3 @@
+name: "webrebels.org"
+spawn_command: "coffee server.coffee"
+watch: [ /\.jade$/ ]
