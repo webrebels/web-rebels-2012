@@ -552,7 +552,7 @@ footer.section {
     .info.show {
         width:                  150%;
     }
-    
+
     .imagebox:nth-child( odd ) .info {
         left:                   35%;
     }
@@ -560,14 +560,14 @@ footer.section {
         left:                   auto;
         right:                  35%;
     }
-    
+
     /* Position the last row from the bottom */
     .imagebox:nth-last-child( 1 ) .info,
     .imagebox:nth-child(2n+1):nth-last-child( 2 ) .info {
         top:                    auto;
         bottom:                 80px;
     }
-    
+
     /* Jari needs more space*/
     .imagebox.jb .info {
         top:                    -500px;

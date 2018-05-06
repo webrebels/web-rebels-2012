@@ -3,7 +3,7 @@
         !!document.querySelectorAll &&
         !!document.getElementsByClassName
     );
-    
+
     if (window.applicationCache) {
         applicationCache.addEventListener('updateready', function() {
             if (confirm('An update is available. Reload now?')) {
@@ -20,7 +20,7 @@
         surprompenEl.style.display = 'none';
         pageEl.style.display = 'block';
     };
-    
+
     if ( !supportedBrowser ) {
         surprompenEl.style.display = 'block';
         pageEl.style.display = 'none';
@@ -50,7 +50,7 @@
             element[ 0 ].setAttribute('class', styles[ 0 ]);
         }
     }
-    
+
     while( i-- ) {
         elImageboxes[ i ].addEventListener( 'click', toggle, false);
     }
@@ -121,12 +121,12 @@
 
 
     // Do map
-    
+
     var map,
         locations = {
             venue : { title : 'Conference Venue', lat : 59.93604, lng : 10.76576 }
         };
-        
+
     function hideMapLink() {
         var maplink = document.getElementsByClassName("maplink");
         if (maplink && maplink.length) maplink[0].style.display = "none";
@@ -146,17 +146,17 @@
             map: map,
             title: locations.venue.title
         });
-        
+
         google.maps.event.addDomListener( window, 'resize', function() {
             map.setCenter( map.getCenter() );
         });
-        
+
         hideMapLink();
     }
-    
+
     // showMap needs to be global for async map loading
     window["showMap"] = showMap;
-    
+
     function loadMap() {
         var script = document.createElement("script");
         script.type = "text/javascript";
