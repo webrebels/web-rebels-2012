@@ -1,10 +1,8 @@
-Webrebels.org
-=============
+# [2012.webrebels.org](2012.webrebels.org)
 
 This is the web site for the Web Rebels conference.
 
-License
--------
+# License
 
 Copyright (C) 2011 The Web Rebels Conference
 
