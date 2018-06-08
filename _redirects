@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://stupefied-goodall-ea1ff0.netlify.com/* https://2012.webrebels.org/:splat 301!
+
+# These extra rules are required because HTTPS is not forced
+http://stupefied-goodall-ea1ff0.netlify.com/* https://2012.webrebels.org/:splat 301!
