@@ -610,3 +610,13 @@ footer.section {
 
 
 }
+
+.list {
+  letter-spacing: 2px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu-item {
+  display: inline-block;
+}
