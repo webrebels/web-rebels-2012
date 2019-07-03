@@ -617,6 +617,19 @@ footer.section {
   padding-left: 0;
 }
 
+
+.list a:active, .list a:hover {
+    background-color: #3c3c36;
+    transition: all .1s ease-in 0s;
+}
+
 .menu-item {
   display: inline-block;
+}
+
+.menu-item a {
+    display: block;
+    padding: .75em 1em .5em;
+    color: #fff;
+    text-decoration: none;
 }
